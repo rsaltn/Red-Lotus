@@ -1,0 +1,195 @@
+<section id="about" class="about">
+	<div class="container">
+		<div class="section-header">
+			<h2>About Red Lotus</h2>
+			<p class="section-subtitle">
+				We are a dedicated FTC robotics team focused on innovation, teamwork, and excellence in engineering.
+			</p>
+		</div>
+
+		<div class="about-grid">
+			<div class="about-card">
+				<div class="icon-wrapper">
+					<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<circle cx="12" cy="12" r="10"></circle>
+						<path d="M12 6v6l4 2"></path>
+					</svg>
+				</div>
+				<h3>Our Mission</h3>
+				<p>
+					To inspire and educate the next generation of engineers through hands-on robotics experience, fostering creativity, problem-solving, and teamwork.
+				</p>
+			</div>
+
+			<div class="about-card">
+				<div class="icon-wrapper">
+					<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+						<circle cx="9" cy="7" r="4"></circle>
+						<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+						<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+					</svg>
+				</div>
+				<h3>Our Team</h3>
+				<p>
+					Composed of passionate students with diverse skills in engineering, programming, design, and outreach. Together, we build robots that compete at the highest level.
+				</p>
+			</div>
+
+			<div class="about-card">
+				<div class="icon-wrapper">
+					<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+						<polyline points="22 4 12 14.01 9 11.01"></polyline>
+					</svg>
+				</div>
+				<h3>Our Values</h3>
+				<p>
+					We believe in gracious professionalism, continuous learning, and giving back to our community through mentorship and STEM outreach programs.
+				</p>
+			</div>
+		</div>
+
+		<div class="achievements">
+			<h3>Team Achievements</h3>
+			<div class="achievement-list">
+				<div class="achievement-item">
+					<span class="achievement-icon">🏆</span>
+					<p>Regional Competition Finalists</p>
+				</div>
+				<div class="achievement-item">
+					<span class="achievement-icon">🤝</span>
+					<p>Community Outreach Programs</p>
+				</div>
+				<div class="achievement-item">
+					<span class="achievement-icon">🔧</span>
+					<p>Innovative Robot Designs</p>
+				</div>
+				<div class="achievement-item">
+					<span class="achievement-icon">📚</span>
+					<p>Engineering Excellence</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.about {
+		background: white;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	.section-header h2 {
+		color: #111827;
+		margin-bottom: 16px;
+	}
+
+	.section-subtitle {
+		font-size: 1.125rem;
+		color: #6b7280;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.about-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 32px;
+		margin-bottom: 80px;
+	}
+
+	.about-card {
+		padding: 32px;
+		background: #f9fafb;
+		border-radius: 12px;
+		transition: all 0.3s;
+	}
+
+	.about-card:hover {
+		transform: translateY(-8px);
+		box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+	}
+
+	.icon-wrapper {
+		width: 56px;
+		height: 56px;
+		background: white;
+		border-radius: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 20px;
+		color: #dc2626;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+	}
+
+	.about-card h3 {
+		color: #111827;
+		margin-bottom: 12px;
+		font-size: 1.25rem;
+	}
+
+	.about-card p {
+		color: #6b7280;
+		line-height: 1.75;
+	}
+
+	.achievements {
+		background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+		padding: 48px;
+		border-radius: 16px;
+		color: white;
+	}
+
+	.achievements h3 {
+		text-align: center;
+		margin-bottom: 32px;
+		font-size: 1.75rem;
+	}
+
+	.achievement-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 24px;
+	}
+
+	.achievement-item {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		padding: 16px;
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 8px;
+		backdrop-filter: blur(10px);
+	}
+
+	.achievement-icon {
+		font-size: 1.5rem;
+	}
+
+	.achievement-item p {
+		color: white;
+		font-weight: 500;
+		margin: 0;
+	}
+
+	@media (max-width: 768px) {
+		.about-grid {
+			grid-template-columns: 1fr;
+			gap: 24px;
+		}
+
+		.achievements {
+			padding: 32px 24px;
+		}
+
+		.achievement-list {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

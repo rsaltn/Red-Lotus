@@ -1,0 +1,141 @@
+<header>
+	<nav class="container">
+		<div class="logo">
+			<span class="logo-number">28862</span>
+			<span class="logo-name">Red Lotus</span>
+		</div>
+		<ul class="nav-links">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#lessons">Lessons</a></li>
+			<li><a href="#materials">Materials</a></li>
+		</ul>
+		<button class="mobile-toggle" aria-label="Toggle navigation">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</nav>
+</header>
+
+<style>
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: rgba(255, 255, 255, 0.95);
+		backdrop-filter: blur(10px);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+		z-index: 1000;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 16px 24px;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.logo {
+		display: flex;
+		align-items: baseline;
+		gap: 8px;
+		font-weight: 700;
+	}
+
+	.logo-number {
+		font-size: 1.5rem;
+		color: #dc2626;
+	}
+
+	.logo-name {
+		font-size: 1.25rem;
+		color: #1f2937;
+	}
+
+	.nav-links {
+		display: flex;
+		list-style: none;
+		gap: 32px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-links a {
+		font-weight: 500;
+		color: #4b5563;
+		transition: color 0.2s;
+		position: relative;
+	}
+
+	.nav-links a:hover {
+		color: #dc2626;
+	}
+
+	.nav-links a::after {
+		content: '';
+		position: absolute;
+		bottom: -4px;
+		left: 0;
+		width: 0;
+		height: 2px;
+		background: #dc2626;
+		transition: width 0.3s;
+	}
+
+	.nav-links a:hover::after {
+		width: 100%;
+	}
+
+	.mobile-toggle {
+		display: none;
+		flex-direction: column;
+		gap: 4px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 8px;
+	}
+
+	.mobile-toggle span {
+		width: 24px;
+		height: 3px;
+		background: #1f2937;
+		border-radius: 2px;
+		transition: all 0.3s;
+	}
+
+	@media (max-width: 768px) {
+		.nav-links {
+			display: none;
+		}
+
+		.mobile-toggle {
+			display: flex;
+		}
+	}
+</style>
+
+<script>
+	const toggle = document.querySelector('.mobile-toggle');
+	const navLinks = document.querySelector('.nav-links');
+
+	if (toggle && navLinks) {
+		toggle.addEventListener('click', () => {
+			navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+			if (navLinks.style.display === 'flex') {
+				navLinks.style.position = 'absolute';
+				navLinks.style.top = '100%';
+				navLinks.style.left = '0';
+				navLinks.style.right = '0';
+				navLinks.style.flexDirection = 'column';
+				navLinks.style.background = 'white';
+				navLinks.style.padding = '16px';
+				navLinks.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+			}
+		});
+	}
+</script>

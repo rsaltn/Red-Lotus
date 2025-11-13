@@ -1,0 +1,233 @@
+<section id="lessons" class="lessons">
+	<div class="container">
+		<div class="section-header">
+			<h2>Learning Resources</h2>
+			<p class="section-subtitle">
+				Comprehensive lessons and tutorials to help you master robotics, programming, and engineering principles.
+			</p>
+		</div>
+
+		<div class="lessons-grid">
+			<div class="lesson-card">
+				<div class="lesson-header">
+					<span class="lesson-tag">Beginner</span>
+					<h3>Introduction to FTC</h3>
+				</div>
+				<p>Learn the basics of FIRST Tech Challenge, game rules, and competition structure.</p>
+				<ul class="lesson-topics">
+					<li>FTC Game Overview</li>
+					<li>Team Roles & Structure</li>
+					<li>Competition Rules</li>
+					<li>Robot Requirements</li>
+				</ul>
+				<a href="#" class="lesson-link">Start Learning →</a>
+			</div>
+
+			<div class="lesson-card">
+				<div class="lesson-header">
+					<span class="lesson-tag intermediate">Intermediate</span>
+					<h3>Robot Design & CAD</h3>
+				</div>
+				<p>Master the fundamentals of mechanical design and computer-aided design for robotics.</p>
+				<ul class="lesson-topics">
+					<li>CAD Software Basics</li>
+					<li>Mechanical Systems</li>
+					<li>Design Principles</li>
+					<li>3D Modeling</li>
+				</ul>
+				<a href="#" class="lesson-link">Start Learning →</a>
+			</div>
+
+			<div class="lesson-card">
+				<div class="lesson-header">
+					<span class="lesson-tag intermediate">Intermediate</span>
+					<h3>Programming Basics</h3>
+				</div>
+				<p>Learn to program your robot using Java and Android Studio for autonomous and teleop control.</p>
+				<ul class="lesson-topics">
+					<li>Java Fundamentals</li>
+					<li>FTC SDK Overview</li>
+					<li>Autonomous Programming</li>
+					<li>TeleOp Control</li>
+				</ul>
+				<a href="#" class="lesson-link">Start Learning →</a>
+			</div>
+
+			<div class="lesson-card">
+				<div class="lesson-header">
+					<span class="lesson-tag advanced">Advanced</span>
+					<h3>Advanced Sensors</h3>
+				</div>
+				<p>Integrate and program advanced sensors like IMUs, color sensors, and distance sensors.</p>
+				<ul class="lesson-topics">
+					<li>Sensor Integration</li>
+					<li>IMU Programming</li>
+					<li>Computer Vision</li>
+					<li>Sensor Fusion</li>
+				</ul>
+				<a href="#" class="lesson-link">Start Learning →</a>
+			</div>
+
+			<div class="lesson-card">
+				<div class="lesson-header">
+					<span class="lesson-tag advanced">Advanced</span>
+					<h3>Strategy & Scouting</h3>
+				</div>
+				<p>Develop competitive strategies, scouting systems, and alliance selection techniques.</p>
+				<ul class="lesson-topics">
+					<li>Game Strategy</li>
+					<li>Scouting Systems</li>
+					<li>Data Analysis</li>
+					<li>Alliance Selection</li>
+				</ul>
+				<a href="#" class="lesson-link">Start Learning →</a>
+			</div>
+
+			<div class="lesson-card">
+				<div class="lesson-header">
+					<span class="lesson-tag">All Levels</span>
+					<h3>Engineering Notebook</h3>
+				</div>
+				<p>Create a professional engineering notebook to document your team's journey and process.</p>
+				<ul class="lesson-topics">
+					<li>Documentation Best Practices</li>
+					<li>Design Process</li>
+					<li>Team Reflections</li>
+					<li>Portfolio Building</li>
+				</ul>
+				<a href="#" class="lesson-link">Start Learning →</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.lessons {
+		background: #f9fafb;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	.section-header h2 {
+		color: #111827;
+		margin-bottom: 16px;
+	}
+
+	.section-subtitle {
+		font-size: 1.125rem;
+		color: #6b7280;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.lessons-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+		gap: 32px;
+	}
+
+	.lesson-card {
+		background: white;
+		padding: 32px;
+		border-radius: 12px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+		transition: all 0.3s;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.lesson-card:hover {
+		transform: translateY(-8px);
+		box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+	}
+
+	.lesson-header {
+		margin-bottom: 16px;
+	}
+
+	.lesson-tag {
+		display: inline-block;
+		padding: 4px 12px;
+		background: #dbeafe;
+		color: #1e40af;
+		border-radius: 16px;
+		font-size: 0.75rem;
+		font-weight: 600;
+		margin-bottom: 12px;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+
+	.lesson-tag.intermediate {
+		background: #fef3c7;
+		color: #92400e;
+	}
+
+	.lesson-tag.advanced {
+		background: #fee2e2;
+		color: #991b1b;
+	}
+
+	.lesson-card h3 {
+		color: #111827;
+		margin-bottom: 12px;
+		font-size: 1.375rem;
+	}
+
+	.lesson-card > p {
+		color: #6b7280;
+		margin-bottom: 20px;
+		flex-grow: 1;
+	}
+
+	.lesson-topics {
+		list-style: none;
+		margin: 0 0 24px 0;
+		padding: 0;
+	}
+
+	.lesson-topics li {
+		color: #4b5563;
+		padding: 8px 0;
+		border-bottom: 1px solid #f3f4f6;
+		font-size: 0.9375rem;
+	}
+
+	.lesson-topics li:last-child {
+		border-bottom: none;
+	}
+
+	.lesson-topics li::before {
+		content: '✓';
+		color: #10b981;
+		font-weight: bold;
+		margin-right: 12px;
+	}
+
+	.lesson-link {
+		color: #dc2626;
+		font-weight: 600;
+		font-size: 0.9375rem;
+		transition: all 0.2s;
+		display: inline-block;
+	}
+
+	.lesson-link:hover {
+		color: #b91c1c;
+		transform: translateX(4px);
+	}
+
+	@media (max-width: 768px) {
+		.lessons-grid {
+			grid-template-columns: 1fr;
+			gap: 24px;
+		}
+
+		.lesson-card {
+			padding: 24px;
+		}
+	}
+</style>
